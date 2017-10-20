@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "dotenv": "^2.0.0",
+    "express": "~4.15.2",
+    "gulp": "^3.9.1",
+    "jade": "~1.11.0",
+    "luhn-alg": "^1.0.1",
+    "morgan": "~1.8.1",
+    "mysql": "^2.11.1",
+    "nodemon": "~1.12.1",
+    "pg": "^6.1.0",
+    "sequelize": "^3.24.3",
+    "serve-favicon": "~2.4.2"
+  }
+}

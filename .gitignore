@@ -1,0 +1,10 @@
+*.codekit
+*.DS_Store
+npm-debug.log
+.codekit-cache/
+.sass-cache/
+node_modules/
+client/bower_components/
+.idea/*
+#config/config.json
+DOCS/*
