@@ -3,12 +3,14 @@ Web app to store credit card information
 
 * Node version 'v6.6.0'
 * Postgres version '9.5.4'
+* Angular version '1.5.8'
 
 # Setting up the app in *development* mode
 
 In the root of the app:
 * npm install
 * bower instal
+* update credentials in config/config.json
 * create database 'nodejs_test'
 * gulp bootstrap-db (to sync models with database) or sequelize db:migrate (if you add this module to existing project)
 * npm start
@@ -37,3 +39,8 @@ The method which I am using is *Randomness With an Initialization Vector(IV)*
  * I am using built-in node module https://www.npmjs.com/package/luhn-alg
  * Why I am using this algo, because our project initially requirement is to validate american credit cards so this algorithm is best to check credit card number patterns without using any third party api.
  * Why I am using this built-in method, because its built-in and we don't have to waste time to write whole Algorithm itself
+
+# Why Angular
+
+* for better performance in nodejs it is recommended to use client side rendering e.g (angular.js, backbone.js)
+* benefits of using this, it sends json to server side otherwise but if you let Node.js render server-side then this sends back an HTML page for every request.
